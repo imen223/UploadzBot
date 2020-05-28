@@ -52,7 +52,7 @@ async def progress_for_pyrogram(
         )
         try:
             await message.edit(
-                text=Translation.SAVED_RECVD_DOC_FILE.format(new_file_name),
+                text=Translation.NEW_FILE_NAME.format(""),
             reply_markup=reply_markup,
             parse_mode="html",
             reply_to_message_id=update.message_id
